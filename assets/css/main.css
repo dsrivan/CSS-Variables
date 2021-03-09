@@ -1,0 +1,195 @@
+:root {
+  --var-Vermelho: #c52a2a;
+  --var-Azul: #2323cc;
+  --var-Verde: #259e25;
+  --var-Amarelo: #bbba1c;
+  --var-Branco: #fff;
+  --var-Preto: #333;
+
+  --var-div01: #5a5a5a;
+  --var-div02: #5a5a5a;
+  --var-div03: #5a5a5a;
+  --var-div04: #5a5a5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.dNone {
+  display: none;
+}
+
+.divH1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.divH1 h1 {
+  color: #444;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  margin: 40px auto 0;
+  font-size: 1.1rem;
+  user-select: none;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+}
+
+section h2,
+section h4,
+section p {
+  margin: 0.4em 0;
+}
+
+.div01,
+.div02,
+.div03,
+.div04 {
+  position: relative;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 40px 20px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  border: none;
+  width: 43%;
+  margin: 10px;
+}
+
+.div01 span,
+.div02 span,
+.div03 span,
+.div04 span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  color: #333;
+  padding: 12px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.div01 {
+  background-color: var(--var-div01);
+}
+
+.div02 {
+  background-color: var(--var-div02);
+}
+
+.div03 {
+  background-color: var(--var-div03);
+}
+
+.div04 {
+  background-color: var(--var-div04);
+}
+
+.divBtns {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #efefef;
+  margin: 50px auto 10px;
+  border-radius: 0.2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.divBtns > .btns {
+  padding: 10px 0;
+  /* margin-left: 20px; */
+}
+
+.divBtns > .btnsColors {
+  width: 45vw;
+}
+
+.divBtns > .btnsBlocks {
+  width: 40vw;
+}
+
+.divBtns > .btnsBtns {
+  width: 30vw;
+}
+
+.divBtns > .btns button {
+  height: 38px;
+  border: none;
+  margin: 5px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.divBtns > .btns:nth-child(1) button,
+.divBtns > .btns:nth-child(3) button {
+  color: var(--var-Branco);
+  width: 70px;
+}
+
+.divBtns > .btns:nth-child(2) button {
+  background-color: #efefef;
+  width: 38px;
+  border-radius: 50%;
+}
+
+.divBtns > .btns:nth-child(3) button:first-child {
+  background-color: var(--var-Preto);
+}
+
+.divBtns > .btns:nth-child(3) button:last-child {
+  background-color: var(--var-Branco);
+  color: var(--var-Preto);
+  border: 1px solid var(--var-Preto);
+}
+
+.divBtns > .btns span {
+  font-weight: normal;
+}
+
+.btn-Red {
+  background-color: var(--var-Vermelho);
+}
+.btn-Blue {
+  background-color: var(--var-Azul);
+}
+.btn-Green {
+  background-color: var(--var-Verde);
+}
+.btn-Yellow {
+  background-color: var(--var-Amarelo);
+}
+
+.btnsApplyReset {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px;
+}
+
+.separate {
+  margin: 0 5px;
+}
+
+.disabledBtn {
+  cursor: not-allowed !important;
+  background-color: #f1f1f1;
+}

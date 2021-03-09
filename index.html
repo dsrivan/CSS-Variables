@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Variables</title>
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">		
+</head>
+<body>
+	<div class="divH1">
+		<h1>CSS Variables</h1>
+	</div>
+	<section>
+		<div class="div01">
+			<h2>Content</h2>
+			<h4>Header 4</h4>
+			<p>Paragraph</p>
+			<span>01</span>
+		</div>
+		<div class="div02">
+			<h2>Content</h2>
+			<h4>Header 4</h4>
+			<p>Paragraph</p>
+			<span>02</span>
+		</div>
+		<div class="div03">
+			<h2>Content</h2>
+			<h4>Header 4</h4>
+			<p>Paragraph</p>
+			<span>03</span>
+		</div>
+		<div class="div04">
+			<h2>Content</h2>
+			<h4>Header 4</h4>
+			<p>Paragraph</p>
+			<span>04</span>
+		</div>
+	</section>
+		
+	<div class="btnsApplyReset">
+		<h2 class="">
+			Color: 
+			<span class="spanColor"></span>
+		</h2>
+		<span class="separate ">
+			|
+		</span>
+		<h2 class="">
+			Block: 
+			<span class="spanBlock"></span>
+		</h2>
+	</div>
+	
+	<div class="divBtns">
+		<div class="btns btnsColors">
+			<h2>Colors</h2>
+			<button class="btn-Red" onclick="generateAndFillSpan(this.innerText);" >
+				Red
+			</button>
+			<button class="btn-Blue" onclick="generateAndFillSpan(this.innerText);" >
+				Blue
+			</button>
+			<button class="btn-Green" onclick="generateAndFillSpan(this.innerText);" >
+				Green
+			</button>
+			<button class="btn-Yellow" onclick="generateAndFillSpan(this.innerText);" >
+				Yellow
+			</button>
+		</div>
+		<div class="btns btnsBlocks">
+			<h2>Blocks</h2>
+			<button class="btn-01" onclick="generateAndFillSpan(this.innerText);">
+				01
+			</button>
+			<button class="btn-02" onclick="generateAndFillSpan(this.innerText);">
+				02
+			</button>
+			<button class="btn-03" onclick="generateAndFillSpan(this.innerText);">
+				03
+			</button>
+			<button class="btn-04" onclick="generateAndFillSpan(this.innerText);">
+				04
+			</button>
+		</div>
+		<div class="btns btnsBtns">
+			<h2>Actions</h2>
+			<div>
+				<button class="btn-apply" onclick="applyStyle();">
+					Apply
+				</button>
+				<button class="btn-reset" onclick="resetStyle();">
+					Reset
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main JS -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
